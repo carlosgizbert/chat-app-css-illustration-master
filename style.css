@@ -7,3 +7,106 @@
 body {
   font-family: 'Rubik', sans-serif;
 }
+
+/* header */
+.mockup-header {
+  height: auto;
+  padding: 1rem;
+  border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-image: linear-gradient(
+    to right,
+    #8838ff,
+    #a439ff,
+    #bd3bff,
+    #d43eff,
+    #e942ff
+  );
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.mockup-header,
+i {
+  color: white;
+}
+
+.icon-btn {
+  cursor: pointer;
+}
+
+.mockup .btn-voltar {
+  margin-right: 1rem;
+}
+
+.mockup-user {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-header {
+  margin-left: 0.5rem;
+}
+
+.user-header .status {
+  margin-top: 0.125rem;
+  font-size: 12px;
+  color: hsl(276, 100%, 81%);
+}
+
+.mockup-user-avatar {
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* fim header */
+
+/* mockup */
+.mockup {
+  width: 375px;
+  background-color: hsl(270, 20%, 96%);
+}
+/* fim mockup */
+
+/* main */
+.mockup-main {
+  position: relative;
+  padding: 1rem;
+}
+
+.message-friend {
+  margin-top: 0.5rem;
+  background-color: hsl(210, 11%, 93%);
+  color: hsl(276, 55%, 52%);
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 60%;
+}
+
+.message-user {
+  margin-top: 0.5rem;
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+  padding: 1rem;
+  border-radius: 1rem 1rem 0.25rem 1rem;
+  max-width: 60%;
+  margin-left: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.message-user-photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-user-photo .photo {
+  width: 80px;
+  margin-left: 0.5rem;
+  border-radius: 1.5rem;
+}
+/* fim main */
