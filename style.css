@@ -6,11 +6,12 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
 }
 
 /* header */
 .mockup-header {
-  height: auto;
+  height: 48px;
   padding: 1rem;
   border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
   display: flex;
@@ -54,7 +55,7 @@ i {
 
 .user-header .status {
   margin-top: 0.125rem;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: hsl(276, 100%, 81%);
 }
 
@@ -68,8 +69,10 @@ i {
 
 /* mockup */
 .mockup {
+  margin: 0 auto;
   width: 375px;
   background-color: hsl(270, 20%, 96%);
+  position: relative;
 }
 /* fim mockup */
 
@@ -77,36 +80,105 @@ i {
 .mockup-main {
   position: relative;
   padding: 1rem;
+  font-size: 12px;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .message-friend {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   background-color: hsl(210, 11%, 93%);
   color: hsl(276, 55%, 52%);
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 1rem 0.5rem;
   max-width: 60%;
 }
 
 .message-user {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   background-color: white;
   color: hsl(271, 15%, 43%);
   padding: 1rem;
-  border-radius: 1rem 1rem 0.25rem 1rem;
+  border-radius: 1rem 1rem 0.5rem 1rem;
   max-width: 60%;
   margin-left: auto;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  box-shadow: rgba(88, 88, 88, 0.1) 0px 24px 32px;
 }
 
 .message-user-photo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .message-user-photo .photo {
-  width: 80px;
-  margin-left: 0.5rem;
+  width: 5rem;
+  margin-left: 0.75rem;
   border-radius: 1.5rem;
+}
+
+.friend-checkbox {
+  height: auto;
+  width: 60%;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: white;
+  font-size: 12px;
+  border-radius: 1rem 1rem 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    #8838ff,
+    #a439ff,
+    #bd3bff,
+    #d43eff,
+    #e942ff
+  );
+}
+
+#form-mockup {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(88, 88, 88, 0.1) 0px 24px 32px;
+  border-radius: 24px;
+  position: fixed;
+  bottom: 16px;
+  border: none;
+}
+
+#input {
+  height: 56px;
+  padding-left: 24px;
+  border-radius: 50px;
+  width: 316px;
+  border: none;
+}
+
+#input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+.btn-input {
+  margin-left: -58px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  background-color: hsl(271, 36%, 24%);
+  cursor: pointer;
+}
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+#input:active {
+  border: none;
 }
 /* fim main */

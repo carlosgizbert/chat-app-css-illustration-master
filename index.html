@@ -25,7 +25,7 @@
         <div class="mockup-user">
           <img src="./images/avatar.jpg" alt="" class="mockup-user-avatar" />
           <div class="user-header">
-            <div class="name">Samuel Green</div>
+            <div class="name">Marjorye Gizbert</div>
             <div class="status">Availabel to Walk</div>
           </div>
         </div>
@@ -53,14 +53,22 @@
           She looks so happy! The time we discussed works. How long shall I take
           her out for?
         </div>
-        30 minute walk $29 1 hour walk $49 Type a message… Simple booking Stay
-        in touch with our dog walkers through the chat interface. This makes it
-        easy to discuss arrangements and make bookings. Once the walk has been
-        completed you can rate your walker and book again all through the chat.
+        <div class="friend-checkbox" id="fc1">30 minute walk $29</div>
+        <div class="friend-checkbox" id="fc2">1 hour walk $49</div>
+        <form action="#" method="get" id="form-mockup">
+          <input type="text" id="input" placeholder="Type a message..." />
+          <button type="submit" class="btn-input" form="form-mockup">
+            <i data-feather="chevron-right"></i>
+          </button>
+        </form>
       </div>
     </div>
     <script>
       feather.replace()
+
+      document.querySelector('.btn-input').addEventListener('click', e => {
+        e.preventDefault()
+      })
     </script>
   </body>
 </html>
