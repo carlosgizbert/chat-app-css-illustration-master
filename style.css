@@ -97,8 +97,9 @@ i {
   .mockup-main {
     max-width: 100vw;
   }
+  .form-mockup,
   #input {
-    width: calc(100% - 32px);
+    min-width: calc(100vw - 4rem);
   }
 }
 
